@@ -44,6 +44,27 @@ public class RecursionsMainPractice {
 		n = 8;
 		int binaryValue = d2b.getD2B(n);
 		log.debug("Binary Value of "+n+" = "+binaryValue);
+		
+		//productOfArrayPractice  ->
+		
+		ProductOfArrayPractice product = new ProductOfArrayPractice();
+		int[] arr = {1,2,3,4,5};
+		int productValue = product.getProductofArray(arr, arr.length);
+		log.debug("Product of given array = "+productValue);
+		
+		//recursiveRangePractice ->
+		
+		RecursiveRangePractice range = new RecursiveRangePractice();
+		n = 6;
+		int rangeValue = range.getRecursiveRange(n);
+		log.debug("RecursiveRange of "+n+" = "+rangeValue);
+		
+		//FibonacciPractice ->
+		
+		FibonacciPractice series = new FibonacciPractice();
+		n = 10;
+		int value = series.fib(n);
+		log.debug(n+"th number in the Fibonacci Sequence = "+value);
 
 	}
 }
