@@ -59,12 +59,28 @@ public class RecursionsMainPractice {
 		int rangeValue = range.getRecursiveRange(n);
 		log.debug("RecursiveRange of "+n+" = "+rangeValue);
 		
-		//FibonacciPractice ->
+		//fibonacciPractice ->
 		
 		FibonacciPractice series = new FibonacciPractice();
 		n = 10;
 		int value = series.fib(n);
 		log.debug(n+"th number in the Fibonacci Sequence = "+value);
 
+		//reversedString -->
+		
+		ReverseStringPractice rs = new ReverseStringPractice();
+		String str = "shubham";
+		String revStr = rs.getReversed(str);
+		log.debug("\""+str+"\" reversed = "+revStr);
+		
+		//isPalindrome -->
+		
+		IsPalindromePractice palindrome = new IsPalindromePractice();
+		str = "tacocat";
+		boolean isPalindrome = palindrome.checkIsPalindrome(str);
+		log.debug("\""+str+"\" is palindrome = "+isPalindrome);
+		str = "awesome";
+		isPalindrome = palindrome.checkIsPalindrome(str);
+		log.debug("\""+str+"\" is palindrome = "+isPalindrome);
 	}
 }
